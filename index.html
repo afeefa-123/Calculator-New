@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <br><br>
+    <div>
+    <div class="row">
+        <div class="col-4" style="background-color:white ;"></div>
+        <div class="col-4" style="background-color:rgb(241, 235, 235) ;">
+            <div class="row">
+                <div class="col-2" style="background-color:white ;"></div>
+                <div class="col-8" style="background-color:rgb(175, 191, 197) ;">
+                    <input id="result" type="text" class="form-control mt-2 mb-2" id="formGroupExampleInput"
+                        placeholder="Enter input">
+                </div>
+                <div class="col-2" style="background-color:white ;"></div>
+            </div>
+
+        </div>
+        <div class="col-4" style="background-color:white ;"></div>
+    </div>
+    <!--first -->
+    <div class="row">
+        <div class="col-4" style="background-color:white ;"></div>
+        <div class="col-4" style="background-color:rgb(177, 158, 158) ;">
+            <div class="row">
+                <div class="col-2" style="background-color:white ;"></div>
+                <div class="col-2"><button type="button" class="btn btn-light mt-2 mb-2">(</button></div>
+                <div class="col-2"><button type="button" class="btn btn-light mt-2 mb-2">)</button></div>
+                <div class="col-2"><button id="mod" onclick="display('%')" type="button" class="btn btn-light mt-2 mb-2">%</button></div>
+                <div class="col-2"><button id="del" onclick="remove()" type="button" class="btn btn-light mt-2 mb-2">del</button></div>
+                <div class="col-2" style="background-color:white ;"></div>
+            </div>
+
+        </div>
+        <div class="col-4" style="background-color:white ;"></div>
+    </div>
+    <!--second -->
+    <div class="row">
+        <div class="col-4" style="background-color:white ;"></div>
+        <div class="col-4" style="background-color:rgb(177, 158, 158) ;">
+            <div class="row">
+                <div class="col-2" style="background-color:white ;"></div>
+                <div class="col-2"><button id="a" onclick="display('7')" type="button" class="btn btn-light mt-2 mb-2">7</button></div>
+                <div class="col-2"><button id="b" onclick="display('8')" type="button" class="btn btn-light mt-2 mb-2">8</button></div>
+                <div class="col-2"><button id="c" onclick="display('9')" type="button" class="btn btn-light mt-2 mb-2">9</button></div>
+                <div class="col-2"><button id="d" onclick="display('/')" type="button" class="btn btn-light mt-2 mb-2">/</button></div>
+                <div class="col-2" style="background-color:white;"></div>
+            </div>
+
+        </div>
+        <div class="col-4" style="background-color:white ;"></div>
+    </div>
+    <!--third -->
+    <div class="row">
+        <div class="col-4" style="background-color:white ;"></div>
+        <div class="col-4" style="background-color:rgb(177, 158, 158) ;">
+            <div class="row">
+                <div class="col-2" style="background-color:white ;"></div>
+                <div class="col-2"><button id="e" onclick="display('4')" type="button" class="btn btn-light mt-2 mb-2">4</button></div>
+                <div class="col-2"><button id="f" onclick="display('5')" type="button" class="btn btn-light mt-2 mb-2">5</button></div>
+                <div class="col-2"><button id="g" onclick="display('6')" type="button" class="btn btn-light mt-2 mb-2">6</button></div>
+                <div class="col-2"><button id="h" onclick="display('*')" type="button" class="btn btn-light mt-2 mb-2">*</button></div>
+                <div class="col-2" style="background-color:white ;"></div>
+            </div>
+
+        </div>
+        <div class="col-4" style="background-color:white ;"></div>
+    </div>
+    <!--fourth -->
+    <div class="row">
+        <div class="col-4" style="background-color:white;"></div>
+        <div class="col-4" style="background-color:rgb(177, 158, 158) ;">
+            <div class="row">
+                <div class="col-2" style="background-color:white ;"></div>
+                <div class="col-2"><button id="i" onclick="display('1')" type="button" class="btn btn-light mt-2 mb-2">1</button></div>
+                <div class="col-2"><button id="j" onclick="display('2')" type="button" class="btn btn-light mt-2 mb-2">2</button></div>
+                <div class="col-2"><button id="k" onclick="display('3')" type="button" class="btn btn-light mt-2 mb-2">3</button></div>
+                <div class="col-2"><button id="l" onclick="display('-')" type="button" class="btn btn-light mt-2 mb-2">-</button></div>
+                <div class="col-2" style="background-color:white ;"></div>
+            </div>
+
+        </div>
+        <div class="col-4" style="background-color:white;"></div>
+    </div>
+    <!--fifth -->
+    <div class="row">
+        <div class="col-4" style="background-color:white;"></div>
+        <div class="col-4" style="background-color:rgb(177, 158, 158) ;">
+            <div class="row">
+                <div class="col-2" style="background-color:white ;"></div>
+                <div class="col-2"><button id="m" onclick="display('0')" type="button" class="btn btn-light mt-2 mb-2">0</button></div>
+                <div class="col-2"><button id="q" onclick="clearAll()"type="button" class="btn btn-light mt-2 mb-2">AC</button></div>
+                <div class="col-2"><button id="o" onclick="output()" type="button" class="btn btn-light mt-2 mb-2">=</button></div>
+                <div class="col-2"><button id="p" onclick="display('+')" type="button" class="btn btn-light mt-2 mb-2">+</button></div>
+                <div class="col-2" style="background-color:white"></div>
+            </div>
+
+        </div>
+        <div class="col-4" style="background-color:white ;"></div>
+    </div>
+    
+</div>
+</body>
+<script src="calc.js"></script>
+</html>
